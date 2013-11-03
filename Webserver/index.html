@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Home Light Control</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+      $(function() {
+        $("#onl1").click(function() {
+          $.ajax('/onl1');
+        });
+ 
+        $("#offl1").click(function() {
+          $.ajax('/offl1');
+        });
+
+        $("#onl2").click(function() {
+          $.ajax('/onl2');
+        });
+ 
+        $("#offl2").click(function() {
+          $.ajax('/offl2');
+        });
+
+        $("#onl3").click(function() {
+          $.ajax('/onl3');
+        });
+ 
+        $("#offl3").click(function() {
+          $.ajax('/offl3');
+        });
+
+        $("#onl4").click(function() {
+          $.ajax('/onl4');
+        });
+ 
+        $("#offl4").click(function() {
+          $.ajax('/offl4');
+        });
+
+        $("#onl5").click(function() {
+          $.ajax('/onl5');
+        });
+ 
+        $("#offl5").click(function() {
+          $.ajax('/offl5');
+        });
+ 
+      });
+    </script>
+    <style>
+      button {
+        font-size: 20pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="page-header">
+          <h1> Light Control Panel <small><span class="badge">5</span> Lights installed</small></h1>
+        </div>  
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class="label label-info">Living Room</span>
+        <button type="button" class="btn btn-success btn-lg" id = "onl1">Light 1 </button> 
+      </div>
+    </div>
+
+    <div class="row">
+      <br><br>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class="label label-info">Living Room</span>
+        <button type="button" class="btn btn-success btn-lg" id = "onl2">Light 2 </button> 
+      </div>
+    </div>
+
+    <div class="row">
+      <br><br>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class="label label-warning">Master Bedroom</span>
+        <button type="button" class="btn btn-success btn-lg" id = "onl3">Light 3 </button> 
+      </div>
+    </div>
+
+    <div class="row">
+      <br><br>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class="label label-danger">Disconnected</span>
+        <button type="button" class="btn btn-success btn-lg" disabled="disabled" id = "onl4">Light 4 </button> 
+      </div>
+    </div>
+
+    <div class="row">
+      <br><br>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <span class="label label-info">Office room</span>
+        <button type="button" class="btn btn-success btn-lg" id = "onl5">Light 5 </button> 
+      </div>
+    </div>
+    
+    
+  </body>
+</html>

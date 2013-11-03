@@ -1,0 +1,8 @@
+General Readme Stuff
+
+1) A lot of the code contained in this repository is based on tutorials found
+on the internet, for this reason I do not want to take all of the credit for
+this work and future revisions of the code contained here must be published
+free for use and modication for others.
+
+2) This code will not run without certain arduino and nodeJS libraries.
